@@ -2,35 +2,81 @@
 
 * {
     text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
 }
 
 body {
+    display: flex;
     font-size: 90%;
+    margin: 0px;
+    overflow-x: hidden;
 }
 
-#nav, #feature, .article, #footer {
+.logo_img {
+    max-height: 100px;
+}
+
+#feature, .article, #footer {
     margin-top: 20px;
     padding: 10px 0px 5px 0px;
 }
 
+#nav {
+    margin-top: 10px;
+}
+
 #feature_banner {
+    display: flex;
     background-image:url(/images/Modern_Design_Kitchen.jpg);
     background-repeat: no-repeat;
-    background-position: 122px 142px;
-    height: 500px;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     width: 100%;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center; /* center horizontally */
+    align-items: flex-end; /* align to the bottom */
+}
+
+.browse-kitchen-main-link {
+    color: white;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.browse-kitchen-main-link a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.browse-kitchen-main-link:hover {
+    background-color: darkgray;
 }
 
 #feature, .article {
     height: 100px;
 }
 
-ul {
-    text-decoration: none;
-}
-
 li {
     display: inline;
-    padding: 5px;
+    padding: 10px;
+}
+
+#nav li a {
     text-decoration: none;
+    color: black;
+}
+
+#nav li a:hover {
+    font-weight: bolder;
+}
+
+#footer {
+    color: white;
+    background-color: black;
 }
